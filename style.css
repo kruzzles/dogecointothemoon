@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: urbane-rounded,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#image {
+    margin-top: 75vh;
+    width: 200px;
+    height: 200px;
+    background-image: url(doge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    position: absolute;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    z-index: 10;
+}
+
+#moon img {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    right: 0;
+    position: absolute;
+}
+
+.animate {
+    animation: animation 1s linear;
+}
+
+
+@keyframes animation {
+    from {
+        margin-top: 75vh;
+        left: 0;
+    }
+
+    to {
+        margin-top: 0;
+        left: 80%;
+    }
+}
+
+h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white;
+    margin-top: 40vh;
+}
