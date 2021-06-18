@@ -11,6 +11,7 @@
 <body style="background-color: black;">
 
 <div id="image" onclick="move()"></div>
+<div id="back" onclick="back()"></div>
 
 <h1> Doge Coin to the moon </h1>
 
@@ -23,37 +24,23 @@
         var image = document.getElementById("image");
 
         image.classList.add("animate");
+
+        image.classList.remove("back");
+    }
+
+    function back() {
+
+        var image = document.getElementById("image");
+
+        image.classList.add("back");
+
+        image.classList.remove("animate");
+
+
     }
 
 </script>
 
 
-
-
-
-
-
-
-
-<script>
-
-    //CODE FOR TIME OF DAY ALERT
-
-    //var e = new Date();
-
-    //alert(e);
-
-    //END CODE
-
-    // CODE FOR LOOP
-
-    //var fruits = ["Apple", "Banana", "Orange"];
-    //for (x of fruits) {
-    //console.log(x);
-    //}
-
-    //END CODE
-
-    </script>
 </body>
 </html>
